@@ -1,16 +1,47 @@
 {
-  "name": "flash-loan-tests",
+  "name": "stacks-flash-loan",
   "version": "1.0.0",
-  "description": "Run unit tests on this project.",
-  "type": "module",
+  "description": "A Stacks blockchain-based flash loan system enabling instant borrowing without collateral",
   "private": true,
+  "workspaces": [
+    "web"
+  ],
   "scripts": {
+    "install:all": "npm install && cd web && npm install",
+    "dev:web": "cd web && npm run dev",
+    "build:web": "cd web && npm run build",
+    "preview:web": "cd web && npm run preview",
     "test": "vitest run",
+    "test:watch": "chokidar \"tests/**/*.ts\" \"contracts/**/*.clar\" -c \"npm run test:report\"",
     "test:report": "vitest run -- --coverage --costs",
-    "test:watch": "chokidar \"tests/**/*.ts\" \"contracts/**/*.clar\" -c \"npm run test:report\""
+    "clarinet:check": "clarinet check",
+    "clarinet:test": "clarinet test",
+    "clarinet:console": "clarinet console"
   },
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdekunleBamz/stacks-flash-loan.git"
+  },
+  "keywords": [
+    "stacks",
+    "clarity",
+    "blockchain",
+    "flash-loan",
+    "defi",
+    "smart-contracts",
+    "lending",
+    "borrowing"
+  ],
+  "author": "Adekunle Bamz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AdekunleBamz/stacks-flash-loan/issues"
+  },
+  "homepage": "https://github.com/AdekunleBamz/stacks-flash-loan#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "type": "module",
   "dependencies": {
     "@hirosystems/clarinet-sdk": "^3.0.2",
     "@stacks/transactions": "^7.0.6",
