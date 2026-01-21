@@ -1,0 +1,13 @@
+-- Stacks Flash Loan Database Initialization
+-- Placeholder for any database-backed tooling.
+
+-- Example (PostgreSQL):
+-- CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+-- CREATE TABLE IF NOT EXISTS flash_loan_events (
+--   id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+--   txid TEXT NOT NULL,
+--   borrower TEXT NOT NULL,
+--   amount BIGINT NOT NULL,
+--   fee BIGINT NOT NULL,
+--   created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+-- );
