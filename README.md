@@ -108,6 +108,8 @@ npm install
 npm test
 ```
 
+Continuous integration: The test suite runs on pushes and pull requests to `master` via `.github/workflows/ci.yml`.
+
 Tests cover:
 - Successful flash loans with repayment
 - Failed loans due to insufficient repayment
