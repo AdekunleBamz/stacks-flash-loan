@@ -26,6 +26,7 @@
     (let (
             ;; Keep track of the original balance of STX in this contract
             (original-stx-balance (stx-get-balance THIS_CONTRACT))
+            ;; Calculate interest and repayment amounts
             ;; Calculate the total return amount including interest fees
             (return-amount (get-return-amount amount STX_FLASH_FEES_PIPS))
             ;; Calculate the interest amount

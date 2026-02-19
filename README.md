@@ -1,4 +1,5 @@
 # Stacks Flash Loans
+[![CI](https://github.com/stacksgov/stacks-flash-loan/actions/workflows/main.yml/badge.svg)](https://github.com/stacksgov/stacks-flash-loan/actions/workflows/main.yml)
 
 A secure flash loan implementation for the Stacks blockchain, enabling uncollateralized borrowing within a single transaction with automatic repayment verification.
 

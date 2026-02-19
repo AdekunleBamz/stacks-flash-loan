@@ -22,6 +22,11 @@ path = 'contracts/mock-flash-recipient.clar'
 clarity_version = 3
 epoch = '3.2'
 
+[contracts.mock-malicious-recipient]
+path = 'contracts/mock-malicious-recipient.clar'
+clarity_version = 3
+epoch = '3.2'
+
 [contracts.mock-token]
 path = 'contracts/mock-token.clar'
 clarity_version = 3
